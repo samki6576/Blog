@@ -1,8 +1,8 @@
 // File: C:\my-blog-website\blog-website (3)\app\write\page.tsx
-import * as entry from '../../../../app/write/page.js'
+import * as entry from '../../../../public/app/write/page.jsx'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
-type TEntry = typeof import('../../../../app/write/page.js')
+type TEntry = typeof import('../../../../public/app/write/page.jsx')
 
 type SegmentParams<T extends Object = any> = T extends Record<string, any>
   ? { [K in keyof T]: T[K] extends string ? string | string[] | undefined : never }
